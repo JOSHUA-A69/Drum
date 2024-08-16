@@ -1,0 +1,81 @@
+/* drum-machine.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1f24;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#drum-machine {
+    width: 100%;
+    max-width: 600px;
+    background-color: #2c3036;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #A6E22E;
+    font-family: 'Merriweather', serif;
+}
+
+#display {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #3e4833;
+    color: #A6E22E;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.drum-pad {
+    width: 100%;
+    padding: 30px;
+    margin: 10px 0;
+    font-size: 1.5em;
+    background-color: #A6E22E;
+    border: none;
+    border-radius: 10px;
+    color: #2c3036;
+    transition: transform 0.1s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.drum-pad:hover {
+    background-color: #9cd422;
+}
+
+.drum-pad:active {
+    background-color: #7fb020;
+    transform: translateY(4px);
+}
+
+.btn-primary {
+    background-color: #A6E22E;
+    border: none;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-4 {
+    padding: 5px;
+}
+
+@media (min-width: 768px) {
+    .drum-pad {
+        font-size: 2em;
+        padding: 40px;
+    }
+}
