@@ -13,7 +13,7 @@ body {
 }
 
 #drum-machine {
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     background-color: #2c3036;
     border-radius: 10px;
@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 20px;
     color: #A6E22E;
     font-family: 'Merriweather', serif;
@@ -40,9 +40,9 @@ h1 {
 
 .drum-pad {
     width: 100%;
-    padding: 30px;
-    margin: 10px 0;
-    font-size: 1.5em;
+    padding: 20px;
+    margin: 5px 0;
+    font-size: 1.2em;
     background-color: #A6E22E;
     border: none;
     border-radius: 10px;
@@ -71,6 +71,25 @@ h1 {
 
 .col-4 {
     padding: 5px;
+}
+
+@media (max-width: 576px) {
+    #drum-machine {
+        padding: 10px;
+    }
+
+    .drum-pad {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #display {
+        font-size: 1.2em;
+    }
 }
 
 @media (min-width: 768px) {
